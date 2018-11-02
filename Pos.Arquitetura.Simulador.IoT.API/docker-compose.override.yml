@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  pos.arquitetura.simulador.iot.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"

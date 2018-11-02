@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  pos.arquitetura.simulador.iot.api:
+    image: pos.arquitetura.simulador.iot.api
+    build:
+      context: ./Pos.Arquitetura.Simulador.IoT.API
+      dockerfile: Dockerfile
