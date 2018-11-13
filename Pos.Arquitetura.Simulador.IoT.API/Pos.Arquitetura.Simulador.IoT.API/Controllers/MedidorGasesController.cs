@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,20 +8,20 @@ using Pos.Arquitetura.Simulador.IoT.Model.Things;
 namespace Pos.Arquitetura.Simulador.IoT.API.Controllers
 {
     [Route("api/[controller]")]
-    public class MedidorCardiacoController : Controller
+    public class MedidorGasesController : Controller
     {
-        // GET api/values
+         // GET api/values
         [HttpGet]
-        public IEnumerable<MedidorCardiaco> Get()
+        public IEnumerable<MedidorGases> Get()
         {
-            return MedidorCardiaco.Log.Get();
+            return MedidorGases.Log.Get();
         }
-        
+
         // POST api/values
         [HttpPost]
-        public void Post([FromBody]MedidorCardiaco value)
+        public void Post([FromBody]MedidorGases value)
         {
-            MedidorCardiaco.Log.Add(value);
+            MedidorGases.Log.Add(value);
         }
 
     }
